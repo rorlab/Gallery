@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<div id="portfolio">
+  <div class="artist">
+    <%= @portfolio.artist %> 
+  </div>
+  <div class="picture">
+    <%= image_tag @portfolio.work_image(:large) %>
+  </div>
+  <div class="title">
+    <%= @portfolio.title %>
+  </div>
+  <div class="actions">
+    <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+    <%= link_to 'Back', portfolios_path %>
+  </div>
+</div>
+

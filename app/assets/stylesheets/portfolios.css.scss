@@ -1,0 +1,85 @@
+// Place all the styles related to the Portfolios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#new_portfolio_link {
+  position:absolute;
+  top:10px;
+  right:15px;
+}
+#portfolios {
+  .portfolio {
+    overflow:auto;
+    width:302px;
+    margin:0 auto;
+    float:left;
+    margin-right:10px;
+    margin-bottom:20px;
+    position:relative;
+    .artist {
+      float:left;
+      width:100%;
+      text-align: center;
+    }
+    .title {
+      float:left;
+      width:100%;
+      text-align: center;
+    }
+    .picture {
+      // background: asset-url("frame.png", image) no-repeat center center fixed;
+      background-image: asset-url("frame1.png", image);
+      background-repeat: repeat-y ;
+      background-position: right;
+      background-size: 100% Auto;
+      float:left;
+      // border:1px solid #a3a3a3;
+      width:300px;
+      height:220px;
+      text-align: center;
+      overflow:hidden;
+      // background-color:#eaeaea;
+      a {
+        background-color:transparent;
+      }
+      img {
+        padding-top:26px;
+        // width:90%;
+        height:168px;
+      }
+    }
+    .actions {
+      position:absolute;
+      top:27px;
+      right:28px;
+      display:none;
+      background-color:#bababa;
+      a {
+        padding:0 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+#portfolio {
+  overflow:auto;
+  width:600px;
+  margin:0 auto;
+  .artist {
+    float:left;
+    width:100%;
+    text-align: center;
+  }
+  .title {
+    float:left;
+    width:100%;
+    text-align: center;
+  }
+  .picture {
+    float:left;
+    width:600px;
+    text-align: center;
+  }
+  .actions {
+    float:left;
+  }
+}

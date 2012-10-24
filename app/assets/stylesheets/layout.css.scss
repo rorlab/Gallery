@@ -1,0 +1,47 @@
+body {  
+  background:#336699 !important;
+}
+
+#header {
+  margin:0 auto;
+  width:80%;
+  text-align: right;
+  h1 {   
+    margin-bottom:5px;
+    a {
+      color:#5E9DC8;
+      font-style: italic;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  }
+  small {
+    color:#5E9DC8;
+    display:block;
+    margin-bottom:10px !important;
+  } 
+}
+
+#trunk {
+  width:80%;
+  margin:0 auto;
+  overflow:auto;
+  #main_page {
+    padding:2em 3em;
+    border:2px solid #0C2C52;
+    overflow:auto;
+    position:relative;
+  }
+  background: white;
+
+}
+
+#footer {
+  width:80%;
+  margin:10px auto;
+  color:#5E9DC8;
+  text-align: center;
+}

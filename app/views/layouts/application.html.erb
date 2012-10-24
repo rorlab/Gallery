@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery, ROR Lab. Lecture</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="header">
+  <h1><%= link_to "ROR Lab., Season 2", root_path %></h1>
+  <small>File Upload using Paperclip</small>
+</div>
+
+<div id="trunk">
+  <div id="main_page">
+    <%= yield %>
+  </div>
+</div>
+
+<div id="footer">
+  - How to use Rubygems for ROR Newbies on <%= Date.today %> -
+</div>
+
+</body>
+</html>

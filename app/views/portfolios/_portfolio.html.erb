@@ -1,0 +1,12 @@
+<div class="portfolio">
+  <div class="picture">
+    <%= link_to image_tag(portfolio.work_image(:medium)), portfolio_path(portfolio) %>
+  </div>
+  <div class="title">
+    <%= portfolio.artist %>: <%= portfolio.title %>
+  </div>
+  <div class="actions">
+    <%= link_to 'Edit', edit_portfolio_path(portfolio) %>
+  </div>
+</div>
+
